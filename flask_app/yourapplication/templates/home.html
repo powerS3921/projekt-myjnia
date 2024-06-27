@@ -1,0 +1,39 @@
+<!-- templates/home.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- Add any CSS or meta tags you need -->
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to Your Application</h1>
+        <!-- Add any header elements here -->
+    </header>
+
+    <main>
+        <section>
+            <h2>About Us</h2>
+            <p>This is a brief description of what your application does.</p>
+        </section>
+
+        <section>
+            <h2>Get Started</h2>
+            <p>If you haven't registered yet, you can do so <a href="{{ url_for('routes.register') }}">here</a>.</p>
+            <p>If you already have an account, you can <a href="{{ url_for('routes.login') }}">login</a> to continue.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Your Application. All rights reserved.</p>
+        <!-- Add any footer elements here -->
+    </footer>
+</body>
+
+</html>
